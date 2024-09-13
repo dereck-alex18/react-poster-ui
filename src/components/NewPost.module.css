@@ -30,6 +30,12 @@
     overflow: hidden;
 }
 
+.charsLimit{
+    color: #b1b1b1;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
 .newPost input{
     padding: 0.8rem;
 }

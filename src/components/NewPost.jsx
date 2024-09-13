@@ -5,13 +5,16 @@ import { useState } from 'react';
 function NewPost({ onCancel, onStoringPosts }){
     const[textContent, setTextContent] = useState('');
     const[authorName, setAuthorName] = useState('');
+    const [charNumber, setCharNumber] = useState(0);
 
     function onTextContentChange(event){
         setTextContent(event.target.value);
+        setCharNumber(event.target.value.length);
     }
 
     function onAuthorNameChange(event){
         setAuthorName(event.target.value);
+        
     }
 
     function submitHandler(event){
@@ -29,6 +32,8 @@ function NewPost({ onCancel, onStoringPosts }){
         <form className = {classes.newPost}>
             <label htmlFor="body">Text</label>
             <textarea name="body" required rows={3} maxLength={90} onChange={ onTextContentChange }></textarea>
+
+            <p className={classes.charsLimit}>Chars Limit: { charNumber }/90</p>
 
             <label htmlFor="author">Author</label>
             <input type="text" name="author" onChange={ onAuthorNameChange }/>
