@@ -1,0 +1,38 @@
+.postHeader{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-bottom: 2px solid #dadada;
+}
+
+.postHeader nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postHeader h1, button{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.postHeader h1{
+    color: #dadada;
+    font-size: 2rem;
+}
+
+.postHeader button{
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #9c7eee;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+.postHeader button:hover{
+    background-color: #8800dd;
+}

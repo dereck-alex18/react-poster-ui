@@ -1,0 +1,74 @@
+.newPost{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem auto;
+    background-color: #510080ea;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 2.5rem 1rem;
+}
+
+.newPost label{
+    color: #dadada;
+    margin: 0.8rem 0;
+    font-size: 1.7rem;
+}
+
+.newPost textarea, input{
+    color: #4a4a4a;
+    font-size: 1.5rem;
+    background-color: #dba8f8;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.newPost textarea{
+    resize: none;
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+}
+
+.newPost input{
+    padding: 0.8rem;
+}
+
+.formButtons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.cancelButton, .submitButton{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    color: #dadada;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submitButton{
+    background-color: #30014d;
+}
+
+.submitButton:hover{
+    background-color: #2e024971;
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+
+.cancelButton{
+    background: transparent;
+}
+
+.cancelButton:hover{
+    background-color: #2e024971;
+}
