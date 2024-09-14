@@ -36,3 +36,16 @@
 .postHeader button:hover{
     background-color: #8800dd;
 }
+
+@media(max-width: 768px){
+
+    .postHeader nav{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .postHeader button{
+        width: 100%;
+        justify-content: center;
+    }
+}

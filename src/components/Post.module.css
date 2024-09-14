@@ -26,3 +26,17 @@
       transform: translateY(0);
     }
   }
+
+  @media(max-width: 768px){
+    .post{
+      margin-bottom: 1.2rem;
+      padding: 0.8rem 0.5rem;
+    }
+
+    .author{
+      font-size: 2rem;
+    }
+    .author + p{
+      font-size: 1.2rem;
+    }
+  }

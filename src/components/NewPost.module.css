@@ -78,3 +78,28 @@
 .cancelButton:hover{
     background-color: #2e024971;
 }
+
+@media(max-width: 768px){
+    .newPost{
+        max-width: 95%;
+        padding: 1.5rem 1rem;
+    }
+
+    .newPost textarea, input{
+        font-size: 1rem;
+    }
+    
+    .newPost textarea{
+        padding: 1rem 0.8rem;
+    }
+
+    .formButtons{
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .cancelButton, .submitButton{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
