@@ -6,9 +6,27 @@ import { useState, useEffect } from 'react';
 
 function PostList({ isModalOpen, onClose }){
     const [posts, setPosts] = useState([]);
+    const url = 'http://127.0.0.1:8000/api/posts/';
 
+    useEffect(() => {
+        async function fetchPosts(){
+            const response = await fetch(url);
+            const responseData = await response.json();
+            setPosts(responseData);
+        }
 
-    function storePosts(newPost){
+        fetchPosts();
+    }, []);
+
+    async function storePosts(newPost){
+        
+        await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newPost)
+        });
         setPosts((currentPosts) => [newPost, ...currentPosts]);
     }
 
