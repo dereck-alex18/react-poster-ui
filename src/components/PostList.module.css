@@ -8,18 +8,29 @@
     justify-content: center;
 }
 
+.emptyMessage, .loading{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .emptyMessage{
-    height: 50vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .emptyMessage h1, h2{
     color: #dadada;
     animation: animate-in 1.5s ease-out forwards;
 }
+
+.loading p{
+  display: flex;
+  align-items: center;
+  color: #dadada;
+}
+
 
 @keyframes animate-in {
     from {
